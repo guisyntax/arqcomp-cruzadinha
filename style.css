@@ -1,0 +1,25 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 16px; background: #f4f6fa; color: #222; }
+h1 { margin: 0 0 4px; font-size: 1.5rem; }
+.sub { margin: 0 0 12px; color: #555; }
+.barra { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+button { padding: 8px 16px; border: 0; border-radius: 6px; background: #2b6cb0; color: #fff; font-size: 1rem; cursor: pointer; }
+button.sec { background: #718096; }
+#contador { font-weight: bold; }
+.tabuleiro-wrap { overflow-x: auto; padding-bottom: 8px; }
+#tabuleiro { display: grid; gap: 2px; width: max-content; }
+.vazia { width: 32px; height: 32px; }
+.casa { position: relative; width: 32px; height: 32px; }
+.casa input { width: 100%; height: 100%; box-sizing: border-box; text-align: center; font-size: 1.1rem; font-weight: bold;
+  text-transform: uppercase; border: 1px solid #4a5568; border-radius: 3px; padding: 0; background: #fff; color: #222; }
+.casa input:focus { outline: 2px solid #2b6cb0; background: #ebf4ff; }
+.casa .num { position: absolute; top: 1px; left: 2px; font-size: 9px; color: #444; pointer-events: none; }
+.casa.certa input { background: #c6f6d5; border-color: #2f855a; }
+.casa.errada input { background: #fed7d7; border-color: #c53030; }
+.pistas { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 16px; }
+.pistas section { flex: 1; min-width: 280px; }
+h2 { font-size: 1.1rem; margin: 0 0 6px; }
+ol { padding-left: 0; list-style: none; margin: 0; }
+li { padding: 4px 6px; margin-bottom: 3px; border-radius: 4px; font-size: .92rem; }
+li b { margin-right: 4px; }
+li.certa { background: #c6f6d5; }
+li.errada { background: #fed7d7; }
